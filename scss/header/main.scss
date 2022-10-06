@@ -1,0 +1,51 @@
+.header {
+  @include flex;
+}
+
+@media screen and (min-width: $phone_width) {
+  .header {
+    padding: 32px 24px;
+    &_nav {
+      display: none;
+
+      &_items {
+        list-style: none;
+        display: none;
+        gap: 33px;
+      }
+    }
+  }
+}
+@media screen and (min-width: $tablet_width) {
+  .header {
+    
+    padding: 32px 24px;
+    &_nav {
+      display: block;
+
+      &_items {
+        list-style: none;
+        display: flex;
+        gap: 33px;
+      }
+
+      &_item {
+        a {
+          transition: color 0.5s ease;
+          text-decoration: none;
+          color: $grey;
+        }
+
+        &:hover {
+          a {
+            color: $darkGreyBlue;
+          }
+        }
+      }
+    }
+
+    &_burger_menu {
+      display: none;
+    }
+  }
+}
