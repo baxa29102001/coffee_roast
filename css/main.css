@@ -84,6 +84,7 @@ body {
     background-image: url("../../../img/Bitmap_small.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
+    justify-content: center;
   }
   .hero_title {
     font-weight: 900;
